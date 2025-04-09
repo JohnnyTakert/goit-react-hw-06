@@ -9,9 +9,7 @@ export default function SearchBox() {
 
   const onFilter = useCallback(
     item => {
-      if (item) {
-        dispatch(setFilter(item));
-      }
+      dispatch(setFilter(item));
     },
     [dispatch]
   );
